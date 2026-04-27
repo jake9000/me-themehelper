@@ -1,0 +1,5 @@
+{
+  "name": "Theme Helper",
+  "description": "Exposes message bubble opacity as a CSS variable (--chat-opacity) for themes to use.",
+  "js": "theme-helper.js"
+}
