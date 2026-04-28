@@ -182,6 +182,14 @@
       normalizeStyle(el, "themed-thinking", ENGINE_SURFACE_CLASSES);
     }
 
+    // Guided state (new in Engine #263)
+    var title = el.getAttribute("title") || "";
+    if (title.indexOf("(guided)") !== -1) {
+      if (!el.classList.contains("guided")) el.classList.add("guided");
+    } else {
+      if (el.classList.contains("guided")) el.classList.remove("guided");
+    }
+
     // Conversation gradient
     applyChatAreaGradient(el);
   }
@@ -255,7 +263,7 @@
           }
         });
       } else if (m.type === "attributes") {
-        if (m.attributeName === "class" || m.attributeName === "style") {
+        if (m.attributeName === "class" || m.attributeName === "style" || m.attributeName === "title") {
           processElement(m.target);
         }
       }
@@ -280,7 +288,7 @@
       childList: true,
       subtree: true,
       attributes: true,
-      attributeFilter: ["style", "class"],
+      attributeFilter: ["style", "class", "title"],
     });
     themeObserver.observe(document.documentElement, {
       attributes: true,
