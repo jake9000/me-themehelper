@@ -67,7 +67,11 @@
     var ratio = maxAlpha > 0 ? alpha / maxAlpha : 0;
     var normalized = Math.max(0, Math.min(1, ratio));
 
-    bubble.style.setProperty("--bubble-opacity", String(normalized));
+    var currentOpacity = bubble.style.getPropertyValue("--bubble-opacity");
+    var newOpacity = String(normalized);
+    if (currentOpacity !== newOpacity) {
+      bubble.style.setProperty("--bubble-opacity", newOpacity);
+    }
   }
 
   // ═══════════════════════════════════════════════════════════════════════════════
@@ -124,6 +128,8 @@
   }
 
   function processElement(el) {
+    if (!el || !el.classList) return;
+
     // Chat input
     if (el.classList.contains("mari-chat-input-box")) {
       normalizeStyle(el, "themed-chat-input", ENGINE_SURFACE_CLASSES);
