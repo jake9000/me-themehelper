@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Whitelist only .js, .css, .json, .md, .gitignore
+!*.js
+!*.css
+!*.json
+!*.md
+!.gitignore
