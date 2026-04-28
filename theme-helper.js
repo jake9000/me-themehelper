@@ -197,13 +197,14 @@
     }
 
     // Conversation gradient
-    applyChatAreaGradient(el);
+    // applyChatAreaGradient(el);
   }
 
   // ═══════════════════════════════════════════════════════════════════════════════
   //  CONVERSATION GRADIENT (cosmetic, optional)
   // ═══════════════════════════════════════════════════════════════════════════════
 
+  /*
   var CONVERSATION_GRADIENT = {
     applyToRP: false,
     light: { from: "#f0f4f8", to: "#e2e8f0" },
@@ -253,6 +254,7 @@
       document.querySelectorAll(".rpg-chat-area").forEach(applyChatAreaGradient);
     }
   }
+  */
 
   // ═══════════════════════════════════════════════════════════════════════════════
   //  OBSERVERS & INIT
@@ -282,7 +284,7 @@
         mutations[i].type === "attributes" &&
         mutations[i].attributeName === "data-theme"
       ) {
-        refreshAllGradients();
+        // refreshAllGradients();
         return;
       }
     }
