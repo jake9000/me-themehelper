@@ -1,6 +1,6 @@
 # Theme Helper
 
-Companion extension for Marinara Engine themes.
+Companion extension for [Marinara Engine](https://github.com/Pasta-Devs/Marinara-Engine) themes.
 
 ## Purpose
 Theme Helper solves limitations in the Marinara Engine's hardcoded styles, enabling themes to more reliably customize the UI.
