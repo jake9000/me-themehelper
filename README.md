@@ -12,3 +12,8 @@ Theme Helper solves limitations in the Marinara Engine's hardcoded styles, enabl
 
 ## Development
 Edit the `theme-helper.js` file and run the compile script to sync changes into `theme-helper.extension.json`.
+
+## Info
+- **Author:** jake9000
+- **License:** CC-0, no rights reserved
+- **Targeting:** Marinara Engine v1.5.6
