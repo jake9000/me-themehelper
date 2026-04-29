@@ -10,8 +10,8 @@ Theme Helper solves limitations in the Marinara Engine's hardcoded styles, enabl
 - **Class Normalization:** Strips hardcoded Tailwind utility classes and replaces them with stable, semantic `themed-*` classes (e.g., `.themed-bubble`, `.themed-chat-input`, `.themed-popover`).
 - **Guided State Support:** Adds a standard `.guided` class to elements currently undergoing guided generation.
 
-## Development
-Edit the `theme-helper.js` file and run the compile script to sync changes into `theme-helper.extension.json`.
+## Settings
+- There are no configurable option. It just provides some css classes for themes to use. check the comments in the js file for details on that.
 
 ## Info
 - **Author:** jake9000
