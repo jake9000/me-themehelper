@@ -167,6 +167,8 @@
         "ring-white/10",
         "ring-white/8",
         "ring-amber-400/30",
+        "ring-amber-300/35",
+        "saturate-75",
       ]);
       processBubble(el);
     }
