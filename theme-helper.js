@@ -198,65 +198,7 @@
       if (el.classList.contains("guided")) el.classList.remove("guided");
     }
 
-    // Conversation gradient
-    // applyChatAreaGradient(el);
   }
-
-  // ═══════════════════════════════════════════════════════════════════════════════
-  //  CONVERSATION GRADIENT (cosmetic, optional)
-  // ═══════════════════════════════════════════════════════════════════════════════
-
-  /*
-  var CONVERSATION_GRADIENT = {
-    applyToRP: false,
-    light: { from: "#f0f4f8", to: "#e2e8f0" },
-    dark: { from: "#0a0a0e", to: "#1c2133" },
-  };
-
-  function getConversationGradient() {
-    var theme = document.documentElement.getAttribute("data-theme");
-    var colors =
-      theme === "light" ? CONVERSATION_GRADIENT.light : CONVERSATION_GRADIENT.dark;
-    return "linear-gradient(135deg, " + colors.from + ", " + colors.to + ")";
-  }
-
-  function applyChatAreaGradient(el) {
-    if (!el || el.nodeType !== Node.ELEMENT_NODE) return;
-
-    // Convo mode: override engine inline gradient
-    if (
-      el.classList.contains("mari-chat-area") &&
-      !el.classList.contains("rpg-chat-area")
-    ) {
-      var gradient = getConversationGradient();
-      if (el.getAttribute("data-convo-gradient") !== gradient) {
-        el.style.setProperty("background", gradient, "important");
-        el.setAttribute("data-convo-gradient", gradient);
-      }
-    }
-
-    // RP mode: only if opted in
-    if (
-      CONVERSATION_GRADIENT.applyToRP &&
-      el.classList.contains("rpg-chat-area")
-    ) {
-      var rpGradient = getConversationGradient();
-      if (el.getAttribute("data-convo-gradient") !== rpGradient) {
-        el.style.setProperty("background", rpGradient);
-        el.setAttribute("data-convo-gradient", rpGradient);
-      }
-    }
-  }
-
-  function refreshAllGradients() {
-    document
-      .querySelectorAll(".mari-chat-area:not(.rpg-chat-area)")
-      .forEach(applyChatAreaGradient);
-    if (CONVERSATION_GRADIENT.applyToRP) {
-      document.querySelectorAll(".rpg-chat-area").forEach(applyChatAreaGradient);
-    }
-  }
-  */
 
   // ═══════════════════════════════════════════════════════════════════════════════
   //  OBSERVERS & INIT
